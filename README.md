@@ -275,7 +275,7 @@ Puedes desplegar este proyecto gratis en cuestión de segundos:
 ```plaintext
 linktree/
 ├── 📁 assets/
-│   └── 🖼️ banner.jpg  # Banner cyberpunk dinámico
+│   └── 🖼️ banner.svg  # Banner cyberpunk dinámico y animado (SVG)
 ├── 📄 index.html      # Estructura semántica, estilos CSS incrustados y lógica JS
 └── 📄 README.md        # Documentación técnica completa y guía paso a paso
 ```
@@ -294,14 +294,34 @@ linktree/
 
 ## 👩‍💻 Autora & Contacto
 
-**Patricia Aparicio**  
-*Frontend Developer & Maker*
+<div align="center">
 
-- 🌐 **Portfolio**: [patricia-aparicio-dev.vercel.app](https://patricia-aparicio-dev.vercel.app/)
-- 🐙 **GitHub**: [@apariciodiazpatricia-cell](https://github.com/apariciodiazpatricia-cell)
-- 💼 **LinkedIn**: [patriciaapariciodiaz](https://www.linkedin.com/in/patriciaapariciodiaz/)
-- ☁️ **Vercel Projects**: [apariciodiazpatricia-cells-projects](https://vercel.com/apariciodiazpatricia-cells-projects)
-- 📧 **Email**: [apariciodiazpatricia@gmail.com](mailto:apariciodiazpatricia@gmail.com)
+### **Patricia Aparicio**  
+`> Frontend Developer & Maker`
+
+<br />
+
+<a href="https://patricia-aparicio-dev.vercel.app/" target="_blank">
+  <img src="https://img.shields.io/badge/MI_PORTAFOLIO_WEB-050505?style=for-the-badge&logo=googlechrome&logoColor=00ff66&labelColor=0a0f0a" alt="Portfolio" height="38" />
+</a>
+<a href="https://github.com/apariciodiazpatricia-cell" target="_blank">
+  <img src="https://img.shields.io/badge/GITHUB_PROFILE-050505?style=for-the-badge&logo=github&logoColor=00ff66&labelColor=0a0f0a" alt="GitHub" height="38" />
+</a>
+<a href="https://www.linkedin.com/in/patriciaapariciodiaz/" target="_blank">
+  <img src="https://img.shields.io/badge/LINKEDIN_NETWORK-050505?style=for-the-badge&logo=linkedin&logoColor=00ff66&labelColor=0a0f0a" alt="LinkedIn" height="38" />
+</a>
+
+<br /><br />
+
+<a href="https://vercel.com/apariciodiazpatricia-cells-projects" target="_blank">
+  <img src="https://img.shields.io/badge/VERCEL_PROJECTS-050505?style=for-the-badge&logo=vercel&logoColor=00ff66&labelColor=0a0f0a" alt="Vercel" height="38" />
+</a>
+<a href="mailto:apariciodiazpatricia@gmail.com" target="_blank">
+  <img src="https://img.shields.io/badge/ENVIAR_CORREO_DIRECTO-050505?style=for-the-badge&logo=gmail&logoColor=00ff66&labelColor=0a0f0a" alt="Email" height="38" />
+</a>
+
+<br />
+</div>
 
 ---
 
