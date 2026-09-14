@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/banner.jpg" alt="LINKTREE PATRI - Cyberpunk Terminal Banner" width="100%" style="border-radius: 10px; border: 1px solid #00ff66; box-shadow: 0 0 25px rgba(0, 255, 102, 0.2);" />
+<img src="./assets/banner.svg" alt="LINKTREE PATRI - Cyberpunk Terminal Banner" width="100%" style="border-radius: 10px; border: 1px solid #00ff66; box-shadow: 0 0 25px rgba(0, 255, 102, 0.2);" />
 
 # ⚡ LINKTREE PATRI // SYSTEM ONLINE
 ### `> Terminal-Inspired Cyberpunk Personal Hub & Bio Link`
