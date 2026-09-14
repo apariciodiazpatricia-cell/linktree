@@ -1,15 +1,8 @@
 <div align="center">
 
-```
-  ██████╗  █████╗ ████████╗██████╗ ██╗ ██████╗██╗ █████╗ 
-  ██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗██║██╔════╝██║██╔══██╗
-  ██████╔╝███████║   ██║   ██████╔╝██║██║     ██║███████║
-  ██╔═══╝ ██╔══██║   ██║   ██╔══██╗██║██║     ██║██╔══██║
-  ██║     ██║  ██║   ██║   ██║  ██║██║╚██████╗██║██║  ██║
-  ╚═╝     ╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═╝ ╚═════╝╚═╝╚═╝  ╚═╝
-```
+<img src="./assets/banner.jpg" alt="LINKTREE PATRI - Cyberpunk Terminal Banner" width="100%" style="border-radius: 10px; border: 1px solid #00ff66; box-shadow: 0 0 25px rgba(0, 255, 102, 0.2);" />
 
-# ⚡ PATRICIA APARICIO // LINKTREE SYSTEM
+# ⚡ LINKTREE PATRI // SYSTEM ONLINE
 ### `> Terminal-Inspired Cyberpunk Personal Hub & Bio Link`
 
 [![Live Demo](https://img.shields.io/badge/LIVE_DEMO-Vercel-00ff66?style=for-the-badge&logo=vercel&logoColor=black)](https://patricia-aparicio-dev.vercel.app/)
@@ -281,6 +274,8 @@ Puedes desplegar este proyecto gratis en cuestión de segundos:
 
 ```plaintext
 linktree/
+├── 📁 assets/
+│   └── 🖼️ banner.jpg  # Banner cyberpunk dinámico
 ├── 📄 index.html      # Estructura semántica, estilos CSS incrustados y lógica JS
 └── 📄 README.md        # Documentación técnica completa y guía paso a paso
 ```
