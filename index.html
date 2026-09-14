@@ -290,8 +290,12 @@
             const a = document.createElement('a');
             a.href = link.url;
             a.className = 'link-card';
-            a.target = '_blank';
-            a.rel = 'noopener noreferrer';
+            
+            // Solo abrir en nueva pestaña enlaces web (evita destello de pestaña en blanco en mailto:)
+            if (!link.url.startsWith('mailto:')) {
+                a.target = '_blank';
+                a.rel = 'noopener noreferrer';
+            }
 
             a.innerHTML = `
                 <div class="link-icon"><i class="${link.icon}"></i></div>
