@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patricia Aparicio | Links</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-color: #050505;
+            --surface-color: #0a0f0a;
+            --neon-green: #00ff66;
+            --neon-green-dim: rgba(0, 255, 102, 0.15);
+            --text-main: #e0e0e0;
+            --text-muted: #888888;
+            --border-color: #1a331a;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+
+        /* Efecto scanlines sutil de terminal */
+        body::before {
+            content: " ";
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+            z-index: 999;
+            background-size: 100% 4px, 6px 100%;
+            pointer-events: none;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            z-index: 1;
+        }
+
+        /* Cabecera del Perfil */
+        .profile-header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .avatar-container {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px auto;
+        }
+
+        .avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: var(--surface-color);
+            border: 2px solid var(--neon-green);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--neon-green);
+            box-shadow: 0 0 20px var(--neon-green-dim);
+        }
+
+        .status-badge {
+            position: absolute;
+            bottom: 2px;
+            right: 2px;
+            width: 16px;
+            height: 16px;
+            background-color: var(--neon-green);
+            border-radius: 50%;
+            border: 3px solid var(--bg-color);
+            box-shadow: 0 0 10px var(--neon-green);
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            letter-spacing: -0.5px;
+        }
+
+        .handle {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14px;
+            color: var(--neon-green);
+            margin-bottom: 12px;
+        }
+
+        .bio {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.5;
+            padding: 0 15px;
+        }
+
+        /* Lista de Enlaces */
+        .links-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .link-card {
+            background-color: var(--surface-color);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--text-main);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link-card:hover {
+            border-color: var(--neon-green);
+            transform: translateY(-2px);
+            box-shadow: 0 0 15px var(--neon-green-dim);
+            background-color: rgba(0, 255, 102, 0.03);
+        }
+
+        .link-icon {
+            font-size: 20px;
+            color: var(--neon-green);
+            margin-right: 18px;
+            width: 24px;
+            text-align: center;
+        }
+
+        .link-content {
+            flex-grow: 1;
+        }
+
+        .link-title {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+
+        .link-subtitle {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        .link-badge {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            background: rgba(0, 255, 102, 0.1);
+            color: var(--neon-green);
+            padding: 4px 8px;
+            border-radius: 4px;
+            border: 1px solid rgba(0, 255, 102, 0.3);
+            text-transform: uppercase;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        .footer span {
+            color: var(--neon-green);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Cabecera -->
+        <div class="profile-header">
+            <div class="avatar-container">
+                <div class="avatar" id="profile-avatar">PA</div>
+                <div class="status-badge"></div>
+            </div>
+            <h1 class="name" id="profile-name">Cargando...</h1>
+            <div class="handle" id="profile-handle">@dev</div>
+            <p class="bio" id="profile-bio">Frontend Developer & Maker</p>
+        </div>
+
+        <!-- Contenedor dinámico de enlaces -->
+        <div class="links-list" id="links-container">
+            <!-- Los enlaces se inyectan automáticamente desde CONFIG -->
+        </div>
+
+        <!-- Pie de página -->
+        <div class="footer">
+            System Online // Built with <span>&lt;3</span> &amp; Code
+        </div>
+    </div>
+
+    <script>
+        /* ==========================================================
+           ZONA DE CONFIGURACIÓN Y MANTENIMIENTO FÁCIL
+           Aquí puedes modificar tus datos y añadir o quitar enlaces.
+           ========================================================== */
+        const CONFIG = {
+            name: "Patricia Aparicio",
+            handle: "@patricia.dev",
+            bio: "Frontend Developer | Creando experiencias web y piezas 3D.",
+            avatarText: "PA",
+
+            links: [
+                {
+                    title: "Portafolio Web",
+                    subtitle: "Explora mis proyectos y trayectoria",
+                    url: "https://tu-portafolio.com",
+                    icon: "fas fa-laptop-code",
+                    badge: "Principal"
+                },
+                {
+                    title: "GitHub",
+                    subtitle: "Repositorios y código fuente",
+                    url: "https://github.com/tu-usuario",
+                    icon: "fab fa-github",
+                    badge: "Código"
+                },
+                {
+                    title: "LinkedIn",
+                    subtitle: "Conectemos profesionalmente",
+                    url: "https://linkedin.com/in/tu-usuario",
+                    icon: "fab fa-linkedin-in",
+                    badge: "Red"
+                },
+                {
+                    title: "Vercel",
+                    subtitle: "Despliegues y aplicaciones en vivo",
+                    url: "https://vercel.com/tu-usuario",
+                    icon: "fas fa-cloud",
+                    badge: "Apps"
+                },
+                {
+                    title: "3D Arte Creaciones",
+                    subtitle: "Diseño e impresión 3D personalizada",
+                    url: "https://instagram.com/3dartecreaciones",
+                    icon: "fas fa-cube",
+                    badge: "Maker"
+                },
+                {
+                    title: "Correo Electrónico",
+                    subtitle: "Escríbeme para colaborar",
+                    url: "mailto:tu-correo@example.com",
+                    icon: "fas fa-envelope",
+                    badge: "Contacto"
+                }
+            ]
+        };
+
+        // Script automático para pintar la página con los datos de arriba
+        document.getElementById('profile-avatar').textContent = CONFIG.avatarText;
+        document.getElementById('profile-name').textContent = CONFIG.name;
+        document.getElementById('profile-handle').textContent = CONFIG.handle;
+        document.getElementById('profile-bio').textContent = CONFIG.bio;
+
+        const container = document.getElementById('links-container');
+
+        CONFIG.links.forEach(link => {
+            const a = document.createElement('a');
+            a.href = link.url;
+            a.className = 'link-card';
+            a.target = '_blank';
+            a.rel = 'noopener noreferrer';
+
+            a.innerHTML = `
+                <div class="link-icon"><i class="${link.icon}"></i></div>
+                <div class="link-content">
+                    <div class="link-title">${link.title}</div>
+                    <div class="link-subtitle">${link.subtitle}</div>
+                </div>
+                <div class="link-badge">${link.badge}</div>
+            `;
+
+            container.appendChild(a);
+        });
+    </script>
+</body>
+
+</html>
